@@ -1,0 +1,108 @@
+body {
+    font-family: "Noto Sans Georgian", sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* ნავიგაციის მენიუ */
+nav {
+    background-color: #1e5f3e;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #2e8b57;
+}
+
+/* ადგილების ბლოკი */
+.place {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    max-width: 1000px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.place img {
+    width: 100%;
+    max-width: 500px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.info h2 {
+    color: #2e8b57;
+}
+
+/* გალერეა */
+.gallery {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.gallery h2 {
+    color: #2e8b57;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
